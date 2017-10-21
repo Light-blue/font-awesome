@@ -1,0 +1,126 @@
+/*设置文档在浏览器中显示时的宽高是100%*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*设置文档超出的部分隐藏*/
+html{
+	overflow: hidden;
+}
+/*去除body的默认边距和字体的颜色*/
+body{
+	font-family: "microsoft yahei";
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+/*设置文档的文字上边距为0，底部边距为5rem*/
+h3, h4, h5{
+	margin-top: 0;
+	margin-bottom: .5rem;
+	}
+	/*设置p标签的上边距为0，底部边距为5rem*/
+p{
+	margin-top: 0;
+	margin-bottom: 1rem;
+		}
+			/*设置整个文档的div元素显示为块级元素*/
+div{
+	display: block;
+		}
+			/*定义页面字体的样式和来源，还有字体的粗细*/
+@font-face {
+	font-family:"Pinyon Script mt";
+	src: url("../fonts/pinyonScript-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+		}
+		    /*将行元素转换为行内块元素并且设置文本渲染引擎工作时如何优化显示文本*/
+.fa{
+	display: inline-block;/*把行元素转换为行内块元素*/
+	font: normal normal normal 14px / 1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+		}
+			/*设置文档的背景和文字居中*/
+#mobile{
+	background-image: url(../img/section_mobile_bg.jpg);
+	text-align: center;
+		}
+		/*设置文字阴影*/
+#mobile h3{
+	font-size: 6rem;
+	font-family: "palace script mt";
+	font-weight: 600;
+	text-shadow: 5px 5px 0.3rem #62819d;/*设置文字阴影*/
+	margin-bottom: 2rem;
+			}
+		/*设置标题文字的字号和阴影*/
+#mobile h4{
+	font-size: 3rem;
+	text-shadow: 10px 10px 0.2rem #62819D;
+		}
+			/*设置文档的背景平铺并且不重复*/
+.cover-section{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+		}
+			/*让div元素以类似于表格的方式呈现*/
+.section-inner{
+	display: table-cell;/*此元素作为一个表格单元格显示*/
+	width: 100%;
+	vertical-align: middle;
+		}
+			/*整个section元素和页面底部的图标区距离浏览器顶部的距离为3rem*/
+#mobile .description{
+	margin-top: 3rem;
+		}
+			/*让整个section元素和类名为desctiption的第一个p标签子元素的字号为1.5rem*/
+#mobile .description > p{
+	font-size: 1.5rem;
+		}
+.row{
+	margin-left: -0.9375rem;
+	margin-right: -0.9375rem;
+		}
+			/*向row元素里面添加一个空内容，并且让它作为表格元素显示*/
+.row:before, .row:after{
+	content: " ";
+	display: table;
+		}
+.row:after{
+	clear: both;
+		}
+#mobile .list{
+	text-align: center;
+	margin: 3rem  0 1.5rem;
+		}
+#mobile .list i{
+	font-size: 3rem;
+	padding: 2em 0 0.5em;
+		}
+#mobile .list h5{
+	font-size: 1.3rem;
+	font-weight: normal;
+		}
+.col-xs-6,.col-md-3{
+	position: relative;
+	min-height: 1px;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	float: left;
+	box-sizing: border-box;
+		}
+.col-xs-6{
+	width: 50%;
+		}
+.col-md-3{
+	float: left;
+	width: 25%;
+		}
